@@ -305,6 +305,38 @@ section {
     color: var(--red);
 }
 
+.features .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    gap: 2rem;
+}
+
+.features .box-container .box {
+    text-align: center;
+    padding: 2rem;
+    background: var(--light-bg);
+    border-radius: .5rem;
+}
+
+.features .box-container .box img {
+    height: 10rem;
+    margin-bottom: .5rem;
+}
+
+.features .box-container .box h3 {
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.features .box-container .box p {
+    font-size: 1.4rem;
+    color: var(--light-color);
+    line-height: 2;
+}
+
 .reviews .box-container {
     display: -ms-grid;
     display: grid;
